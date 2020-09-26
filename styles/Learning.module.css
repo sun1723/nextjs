@@ -1,13 +1,10 @@
 .header {
-    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-    background-image: url("http://webmadewell.com/wp-content/uploads/2018/01/img-bg-sample-parallax-header.jpg");
+    background-color: azure;
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 45%;
+    height: 100%;
 }
 
 .header::before {
@@ -17,17 +14,69 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: MidnightBlue;
+    background-color: antiquewhite;
     opacity: 0.3;
   }
 
-.header-section {
-    position: relative;
-    padding: 15% 0 10%;
-    max-width: 640px;
+.header_section{
+    display:flex;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 10% 10%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
     font-family: "Montserrat", sans-serif;
+}  
+.header_section div{
+    min-width:33%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.header_section div img
+{
+    max-height:34vh;
+    object-fit:fill;
+}
+.header_section div h2 {
+    margin-top: -50px;
+}
+
+.header_section div:nth-child(1){
+    transform:translate(-10%,-30%);
+}
+.header_section div:nth-child(1) img
+{
+    /* border:2px solid black; */
+    transform:rotate(-30deg) ;
+}
+.header_section div:nth-child(2){
+    transform:translate(-10%,18%);
+}
+.header_section div:nth-child(2) img
+{
+    /* border:2px solid black; */
+    transform:rotate(-75deg) ;
+
+}
+.header_section div:nth-child(3){
+    transform:translate(-15%,-25%);
+}
+.header_section div:nth-child(3) img
+{
+    /* border:2px solid black; */
+    transform:rotate(90deg) ;
+}
+.header_section div:nth-child(4){
+    transform: translate(-35%,18%);
+}
+.header_section div:nth-child(4) img
+{
+    /* border:2px solid black; */
+    transform:rotate(-110deg);
+
 }

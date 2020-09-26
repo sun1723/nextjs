@@ -8,8 +8,17 @@
     "start": "next start"
   },
   "dependencies": {
+    "image-webpack-loader": "^7.0.1",
     "next": "^9.5.3",
+    "next-images": "^1.5.0",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "file-loader": "^6.1.0",
+    "react-inlinesvg": "^2.1.0",
+    "react-svg-loader": "^3.0.3",
+    "svg-inline-loader": "^0.8.2",
+    "svg-url-loader": "^6.0.0"
   }
 }
